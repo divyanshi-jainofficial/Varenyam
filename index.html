@@ -7,20 +7,17 @@
 <meta name="description" content="Varenyam is a heritage house preserving rare Banarasi masterpieces through limited creations, master craftsmanship, and timeless ownership.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
 
 <div id="loader">
-  <div class="seal">
-    <svg viewBox="0 0 100 100">
-      <circle class="seal-ring" cx="50" cy="50" r="46"/>
-      <path class="seal-mark" d="M30 60 L50 30 L70 60 M35 60 L65 60"/>
-    </svg>
-    <div class="loader-label">Varenyam</div>
-  </div>
+  <svg class="thread" viewBox="0 0 600 100">
+    <path d="M0,50 Q150,10 300,50 T600,50" fill="none" stroke="#8C6A3D" stroke-width="1"/>
+  </svg>
+  <div class="loader-label">वरेण्यम्</div>
 </div>
 
 
@@ -28,14 +25,58 @@
 <header class="nav">
   <div class="nav-inner">
     <a href="index.html" class="brand-mark">Varenyam<span class="dot"></span></a>
-    <nav class="nav-links">
-      <a href="philosophy.html">Philosophy</a>
-      <a href="house.html">The House</a>
-      <a href="masters.html">Masters</a>
-      <a href="collection.html">Collection</a>
-      <a href="ownership.html">Ownership</a>
-      <a href="journal.html">Journal</a>
-    </nav>
+    <nav class="nav-links" id="siteNavLinks">
+  
+  <a href="philosophy.html">The Philosophy</a>
+  <a href="house.html">The House</a>
+  <a href="masters.html">The Masters</a>
+
+  <!-- COLLECTION DROPDOWN -->
+  <div class="dropdown">
+    <a href="collection.html" class="dropdown-trigger">
+      The Collection <span class="caret">⌄</span>
+    </a>
+    <div class="dropdown-menu">
+      <a href="collection.html" class="dd-all">View All Creations</a>
+      <span class="dd-divider"></span>
+      <a href="collection-eternal-weave.html">
+        <span class="dd-num">No. II</span>
+        <span class="dd-title">The Eternal Weave</span>
+      </a>
+      <a href="collection-kashi-reverence.html">
+        <span class="dd-num">No. III</span>
+        <span class="dd-title">Kashi Reverence</span>
+      </a>
+      <a href="collection-legacy-of-gold.html">
+        <span class="dd-num">No. IV</span>
+        <span class="dd-title">Legacy of Gold</span>
+      </a>
+    </div>
+  </div>
+
+  <a href="process.html">Creation Process</a>
+  <a href="ownership.html">Ownership</a>
+
+  <!-- JOURNAL DROPDOWN -->
+  <div class="dropdown">
+    <a href="journal.html" class="dropdown-trigger">
+      Journal <span class="caret">⌄</span>
+    </a>
+    <div class="dropdown-menu">
+      <a href="journal.html" class="dd-all">All Stories</a>
+      <span class="dd-divider"></span>
+      <a href="journal-preserving-banaras.html">
+        <span class="dd-title">Preserving Banaras</span>
+      </a>
+      <a href="journal-hands-behind.html">
+        <span class="dd-title">The Hands Behind</span>
+      </a>
+      <a href="journal-heritage-ownership.html">
+        <span class="dd-title">Heritage of Ownership</span>
+      </a>
+    </div>
+  </div>
+</nav>
     <a href="request.html" class="nav-cta desktop-only">Request Consideration</a>
     <button class="menu-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div>
@@ -70,11 +111,15 @@
     <source src="https://res.cloudinary.com/diti2zhnf/video/upload/v1782197458/15530632_3840_2160_24fps_ccnxbz.mp4" type="video/mp4">
 
 </video>
+
+
+
+  <section>
     </div>
     <div class="hero-content">
       <p class="eyebrow reveal">House of Rare Banarasi Masterpieces</p>
       <h1 class="display-xl reveal reveal-d1">Not Created For<br>Everyone. Preserved<br>For Generations.</h1>
-      <p class="lede reveal reveal-d2">Varenyam safeguards one of India's finest living art forms through limited creations, master craftsmanship, and timeless heritage.</p>
+      <p class="lede reveal reveal-d2">Eleven creations a year. Each one woven once, owned once, never repeated.</p>
       <div class="btn-row reveal reveal-d3">
         <a href="house.html" class="btn solid">Enter The House <span class="arrow">→</span></a>
         <a href="request.html" class="btn ghost">Request Consideration</a>
@@ -97,12 +142,7 @@
 
         </h2>
 
-        <p class="lede mx-auto center reveal reveal-d2">
-
-            Every creation is documented before release.
-            Availability changes only after a private consultation.
-
-        </p>
+        <p class="lede mx-auto center reveal reveal-d2">Documented before release. Available only by consultation.</p>
 
         <div class="edition-status">
 
@@ -153,8 +193,7 @@
       <div class="reveal">
         <p class="eyebrow">The House</p>
         <h2 class="display-md" style="margin-top:1rem;">A custodian, <span class="italic">not</span> a brand.</h2>
-        <p class="body-text" style="margin-top:1.6rem;">Varenyam was founded on a singular conviction: that the Banarasi loom is not a manufacturing process but a generational inheritance, carried in the hands of master weavers and at risk of disappearing beneath the weight of mass production.</p>
-        <p class="body-text" style="margin-top:1.2rem;">We exist to ensure it does not. Each creation we release is the result of months, sometimes years, of work — woven once, owned once, never repeated.</p>
+        <p class="body-text" style="margin-top:1.6rem;">The Banarasi loom is not a process — it is an inheritance. Varenyam exists to ensure it survives. Each creation is woven once, owned once, and never repeated.</p>
         <div class="btn-row" style="margin-top:2rem;">
           <a href="philosophy.html" class="text-link">Discover Our Philosophy <span class="arrow">→</span></a>
         </div>
@@ -176,10 +215,10 @@
         <h2 class="display-md">The principles that govern every decision we make.</h2>
       </div>
       <div class="grid-4">
-        <div class="pillar reveal"><span class="p-no">I.</span><h3>Heritage</h3><p>Six centuries of Banarasi weaving, honoured rather than reinvented.</p></div>
-        <div class="pillar reveal reveal-d1"><span class="p-no">II.</span><h3>Rarity</h3><p>Never more than twenty-one creations a year. Never repeated.</p></div>
-        <div class="pillar reveal reveal-d2"><span class="p-no">III.</span><h3>Permanence</h3><p>Made to outlive trend, season, and the hands that first wore it.</p></div>
-        <div class="pillar reveal reveal-d3"><span class="p-no">IV.</span><h3>Legacy</h3><p>Each piece carries a name, a story, and a place in a private archive.</p></div>
+        <div class="pillar reveal"><span class="p-no">१</span><h3>Heritage</h3><p>Six centuries of Banarasi craft. Honoured, not reinvented.</p></div>
+        <div class="pillar reveal reveal-d1"><span class="p-no">२</span><h3>Rarity</h3><p>Twenty-one creations a year. Never repeated.</p></div>
+        <div class="pillar reveal reveal-d2"><span class="p-no">३</span><h3>Permanence</h3><p>Made to outlive trend and season.</p></div>
+        <div class="pillar reveal reveal-d3"><span class="p-no">४</span><h3>Legacy</h3><p>A name. A story. A place in our private archive.</p></div>
       </div>
     </div>
   </section>
@@ -193,9 +232,9 @@
       </div>
       <div class="reveal reveal-d2">
         <p class="eyebrow">From The Collection</p>
-        <p class="m-num" style="font-family:var(--serif); font-style:italic; color:var(--gold-soft); margin-top:1rem;">Creation No. II</p>
+        <p class="m-num" style="font-family:var(--serif); font-style:italic; color:var(--gold-soft); margin-top:1rem;">सृष्टि II</p>
         <h2 class="display-md" style="margin-top:.6rem;">The Eternal Weave</h2>
-        <p class="body-text" style="margin-top:1.2rem;">Woven across four hundred hours by a single master and his apprentice, this creation reimagines a nineteenth-century Kashi motif lost to most living archives.</p>
+        <p class="body-text" style="margin-top:1.2rem;">Four hundred hours. A single master. A Kashi motif lost to most living archives.</p>
         <div class="tag-row"><span class="tag">Privately Available</span></div>
         <div class="btn-row" style="margin-top:1.8rem;">
           <a href="collection-eternal-weave.html" class="text-link">View This Creation <span class="arrow">→</span></a>
@@ -224,7 +263,7 @@
       <div class="reveal">
         <p class="eyebrow">The Masters</p>
         <h2 class="display-md" style="margin-top:1rem;">The hands that have carried this craft for three generations.</h2>
-        <p class="body-text" style="margin-top:1.4rem;">Every Varenyam creation is attributed to the master who wove it. We do not hide our artisans behind a brand name — we make them the name worth knowing.</p>
+        <p class="body-text" style="margin-top:1.4rem;">We do not hide our artisans behind a brand. We make them the name worth knowing.</p>
         <div class="btn-row"><a href="masters.html" class="text-link">Meet The Masters <span class="arrow">→</span></a></div>
       </div>
       <div class="frame tall reveal reveal-d2">
@@ -238,7 +277,7 @@
     <div class="wrap center" style="max-width:760px; margin:0 auto;">
       <p class="eyebrow center reveal">Ownership</p>
       <h2 class="display-md reveal reveal-d1" style="margin-top:1rem;">Ownership begins with consideration, not transaction.</h2>
-      <p class="lede mx-auto reveal reveal-d2" style="margin:1.4rem auto 0; text-align:center;">Each acquisition is preceded by a private consultation. We do not list prices. We do not run sales. We consider, and we are considered in return.</p>
+      <p class="lede mx-auto reveal reveal-d2" style="margin:1.4rem auto 0; text-align:center;">No prices. No sales. Only consideration — both ways.</p>
       <div class="btn-row" style="justify-content:center; margin-top:2.2rem;">
         <a href="ownership.html" class="btn ghost">Explore Ownership</a>
         <a href="request.html" class="btn solid">Request Consideration <span class="arrow">→</span></a>
