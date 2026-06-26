@@ -1,13 +1,29 @@
-document.addEventListener('DOMContentLoaded', () => {
-
-  const loader = document.getElementById('loader');
-  if (loader) {
-    window.addEventListener("load", () => {
-    setTimeout(() => {
-        loader.classList.add("hidden");
-    }, 900);
-});
+window.addEventListener('pageshow', (e) => {
+  if(e.persisted){
+    // Page restored from bfcache — force reload so the loader plays
+    window.location.reload();
   }
+});
+// Loader: guarantee a minimum on-screen time so the thread + name animations finish
+(function(){
+  const loader = document.getElementById('loader');
+  if(!loader) return;
+
+  const MIN_DISPLAY = 3200;   // ms — must be >= label delay (2000) + label fade (1200)
+  const start = performance.now();
+
+  function hideLoader(){
+    const elapsed = performance.now() - start;
+    const wait = Math.max(0, MIN_DISPLAY - elapsed);
+    setTimeout(() => loader.classList.add('hidden'), wait);
+  }
+
+  if(document.readyState === 'complete'){
+    hideLoader();
+  } else {
+    window.addEventListener('load', hideLoader);
+  }
+})();
 
   const toggle = document.querySelector('.menu-toggle');
   const mobileMenu = document.querySelector('.mobile-menu');
@@ -61,4 +77,4 @@ document.addEventListener('DOMContentLoaded', () => {
     if (href === current) a.classList.add('active');
   });
 
-});
+
