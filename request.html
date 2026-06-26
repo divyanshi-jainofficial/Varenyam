@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request Consideration — Varenyam</title>
+<meta name="description" content="Begin a private consultation with Varenyam. Submit a request for consideration.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="loader"><div class="seal"><svg viewBox="0 0 100 100"><circle class="seal-ring" cx="50" cy="50" r="46"/><path class="seal-mark" d="M30 60 L50 30 L70 60 M35 60 L65 60"/></svg><div class="loader-label">Varenyam</div></div></div>
+
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand-mark">Varenyam<span class="dot"></span></a>
+    <nav class="nav-links">
+      <a href="philosophy.html">Philosophy</a><a href="house.html">The House</a><a href="masters.html">Masters</a>
+      <a href="collection.html">Collection</a><a href="ownership.html">Ownership</a><a href="journal.html">Journal</a>
+    </nav>
+    <a href="request.html" class="nav-cta desktop-only active">Request Consideration</a>
+    <button class="menu-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="mobile-menu">
+  <a href="index.html">Home</a><a href="philosophy.html">The Philosophy</a><a href="house.html">The House</a>
+  <a href="masters.html">The Masters</a><a href="collection.html">The Collection</a><a href="process.html">Creation Process</a>
+  <a href="ownership.html">Ownership</a><a href="journal.html">Journal</a>
+  <a href="request.html" class="nav-cta">Request Consideration</a>
+</div>
+
+<main>
+  <section class="page-hero" style="min-height:54vh;">
+    <div class="wrap">
+      <p class="eyebrow reveal">Request Consideration</p>
+      <h1 class="display-lg reveal reveal-d1" style="margin-top:1rem; max-width:760px;">Every relationship with Varenyam begins here.</h1>
+      <p class="lede reveal reveal-d2" style="margin-top:1.2rem;">Share a little about yourself and your interest. A member of the house will respond personally — typically within five business days.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap" style="max-width:760px; margin:0 auto;">
+
+      <form id="consideration-form" class="reveal">
+        <div class="form-grid">
+          <div class="field">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Your full name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="name@example.com" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
+          </div>
+          <div class="field">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" placeholder="e.g. Mumbai" required>
+          </div>
+          <div class="field">
+            <label for="interest">Interest</label>
+            <select id="interest" name="interest" required>
+              <option value="" disabled selected>Select an area of interest</option>
+              <option>A Specific Creation</option>
+              <option>Bespoke Commission</option>
+              <option>Founding Circle Access</option>
+              <option>General Consideration</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="consult">Preferred Consultation Type</label>
+            <select id="consult" name="consult" required>
+              <option value="" disabled selected>Select a preference</option>
+              <option>In Person, Varanasi</option>
+              <option>In Person, Mumbai</option>
+              <option>Private Video Consultation</option>
+              <option>Written Correspondence First</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="message">A Note, If You Wish</label>
+            <textarea id="message" name="message" placeholder="Tell us about the creation you're interested in, or any questions you may have."></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn solid">Submit Request <span class="arrow">→</span></button>
+        <p class="form-note">All requests are reviewed personally and held in strict confidence. Submission does not guarantee acquisition or membership.</p>
+      </form>
+
+      <div id="form-confirm" class="confirm-box">
+        <div class="seal" style="margin:0 auto 2rem;">
+          <svg viewBox="0 0 100 100"><circle class="seal-ring" cx="50" cy="50" r="46" style="animation:none; stroke-dashoffset:0;"/><path class="seal-mark" d="M30 60 L50 30 L70 60 M35 60 L65 60" style="animation:none; stroke-dashoffset:0;"/></svg>
+        </div>
+        <p class="eyebrow center">Request Received</p>
+        <h2 class="display-md" style="margin-top:1rem;">Thank you for your consideration.</h2>
+        <p class="body-text mx-auto" style="margin:1.2rem auto 0; text-align:center;">A member of the house will respond personally. In the meantime, you are welcome to continue exploring the archive.</p>
+        <div class="btn-row" style="justify-content:center;">
+          <a href="collection.html" class="btn ghost">View The Collection</a>
+          <a href="index.html" class="btn ghost">Return Home</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand"><div class="brand-mark">Varenyam<span class="dot"></span></div>
+        <p>A heritage house preserving rare Banarasi masterpieces through limited creations, master craftsmanship, and timeless ownership.</p></div>
+      <div class="footer-col"><h5>The House</h5><a href="philosophy.html">The Philosophy</a><a href="house.html">The House</a><a href="masters.html">The Masters</a><a href="process.html">Creation Process</a></div>
+      <div class="footer-col"><h5>Acquire</h5><a href="collection.html">The Collection</a><a href="ownership.html">Ownership</a><a href="ownership.html#founding-circle">Founding Circle</a><a href="request.html">Request Consideration</a></div>
+      <div class="footer-col"><h5>Journal</h5><a href="journal.html">All Entries</a><a href="journal-preserving-banaras.html">Preserving Banaras Beyond Fashion</a><a href="journal-hands-behind.html">The Hands Behind the Masterpieces</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Varenyam. All Rights Reserved. House of Rare Banarasi Masterpieces.</span>
+      <div class="footer-social"><a href="#">Instagram</a><a href="journal.html">Journal</a><a href="request.html">Private Line</a></div></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
